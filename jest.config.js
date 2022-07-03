@@ -1,5 +1,11 @@
 module.exports = {
   preset: 'ts-jest',
+  // Workaround for https://github.com/kulshekhar/ts-jest/issues/1648
+  globals: {
+    'ts-jest': {
+      tsconfig: 'tsconfig.jest.json'
+    }
+  },
   testEnvironment: 'jsdom',
   transform: {
     '^.+\\.vue$': '@vue/vue3-jest',
