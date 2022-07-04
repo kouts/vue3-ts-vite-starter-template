@@ -1,8 +1,26 @@
-node_modules
 .DS_Store
-dist-ssr
-dist-playground
-*.local
-.vscode
+node_modules
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
 .idea
-*.iml
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Custom ignores
+.editorconfig
+.prettierrc
