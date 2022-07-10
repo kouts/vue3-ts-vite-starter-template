@@ -18,7 +18,7 @@
     "bootstrap": "^5.2.0-beta1",
     "pinia": "^2.0.14",
     "vue": "^3.2.37",
-    "vue-router": "^4.0.16"
+    "vue-router": "^4.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
@@ -29,12 +29,12 @@
     "@fullhuman/vue-cli-plugin-purgecss": "^4.1.0",
     "@types/jest": "^28.1.4",
     "@types/jsdom": "^16.2.14",
-    "@types/node": "^18.0.1",
-    "@typescript-eslint/parser": "^5.30.4",
+    "@types/node": "^18.0.3",
+    "@typescript-eslint/parser": "^5.30.5",
     "@vitejs/plugin-vue": "^2.3.3",
     "@vue/compiler-sfc": "^3.2.37",
     "@vue/eslint-config-typescript": "^11.0.0",
-    "@vue/test-utils": "^2.0.1",
+    "@vue/test-utils": "^2.0.2",
     "@vue/tsconfig": "^0.1.3",
     "@vue/vue3-jest": "^28.0.1",
     "autoprefixer": "^10.4.7",
@@ -49,7 +49,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
-    "eslint-plugin-vue": "^9.1.1",
+    "eslint-plugin-vue": "^9.2.0",
     "husky": "^8.0.1",
     "jest": "^28.1.2",
     "jest-environment-jsdom": "^28.1.2",
@@ -58,9 +58,9 @@
     "sass": "^1.53.0",
     "ts-jest": "^28.0.5",
     "typescript": "^4.7.4",
-    "vite": "^2.9.13",
+    "vite": "^2.9.14",
     "vite-plugin-html": "^3.2.0",
     "vue-eslint-parser": "^9.0.3",
-    "vue-tsc": "^0.38.2"
+    "vue-tsc": "^0.38.3"
   }
 }
