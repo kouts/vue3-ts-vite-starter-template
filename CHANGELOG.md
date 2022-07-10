@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.0...v1.0.1) (2022-07-10)
+
+
+### Bug Fixes
+
+* removed unneeded wrapper div ([68621a3](https://github.com/kouts/vue3-ts-vite-starter-template/commit/68621a39ff40893b0ae6566915d99d139c9ee2db))
+
 # 1.0.0 (2022-07-04)
 
 
