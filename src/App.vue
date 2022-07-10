@@ -1,10 +1,7 @@
 <template>
-  <div>
-    {{ layout }}
-    <component :is="layout">
-      <router-view />
-    </component>
-  </div>
+  <component :is="layout">
+    <router-view />
+  </component>
 </template>
 
 <script setup lang="ts">
