@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.1...v1.0.2) (2022-07-11)
+
+
+### Bug Fixes
+
+* added commit-msg ([825d3e6](https://github.com/kouts/vue3-ts-vite-starter-template/commit/825d3e6867f034df020d53412f03a6c451d80f40))
+* added lint-staged hook ([f2b41bc](https://github.com/kouts/vue3-ts-vite-starter-template/commit/f2b41bc6ea41d4cc30d13f94723a8c4fac72ba34))
+
 ## [1.0.1](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.0...v1.0.1) (2022-07-10)
 
 
