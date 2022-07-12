@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.2...v1.0.3) (2022-07-12)
+
+
+### Bug Fixes
+
+* added the executable flag to hooks ([c2868b5](https://github.com/kouts/vue3-ts-vite-starter-template/commit/c2868b5b66312f1d036d65fa260d32e7b15aa699))
+
 ## [1.0.2](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.1...v1.0.2) (2022-07-11)
 
 
