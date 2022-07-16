@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.4...v1.0.5) (2022-07-16)
+
+
+### Bug Fixes
+
+* added nvmrc ([76aba6a](https://github.com/kouts/vue3-ts-vite-starter-template/commit/76aba6aaaa8877cb038312ec30c678acf71c94a4))
+
 ## [1.0.4](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.3...v1.0.4) (2022-07-16)
 
 
