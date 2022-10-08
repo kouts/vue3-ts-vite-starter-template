@@ -1,16 +1,16 @@
 module.exports = {
   preset: 'ts-jest',
-  // Workaround for https://github.com/kulshekhar/ts-jest/issues/1648
-  globals: {
-    'ts-jest': {
-      tsconfig: 'tsconfig.jest.json'
-    }
-  },
   testEnvironment: 'jsdom',
   transform: {
     '^.+\\.vue$': '@vue/vue3-jest',
     '^.+\\js$': 'babel-jest',
-    '^.+\\.ts$': 'ts-jest'
+    // https://kulshekhar.github.io/ts-jest/docs/getting-started/options/tsconfig/#examples
+    '^.+\\.tsx?$': [
+      'ts-jest',
+      {
+        tsconfig: 'tsconfig.jest.json'
+      }
+    ]
   },
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(js|ts)$',
   moduleFileExtensions: ['vue', 'js', 'ts'],

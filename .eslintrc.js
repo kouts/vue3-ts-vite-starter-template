@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['eslint-config-kouts/vue3-typescript'],
+  extends: ['@kouts/eslint-config/vue3-typescript'],
   overrides: [
     {
       // Disable multi-word-component-names for pages and layouts
