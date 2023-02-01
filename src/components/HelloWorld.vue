@@ -13,13 +13,13 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'HelloWorld'
 }
 </script>
 
-<script setup>
+<script setup lang="ts">
 defineProps({
   msg: {
     type: String,
