@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.9...v1.0.10) (2023-02-01)
+
+
+### Bug Fixes
+
+* added lang attr in script ([cfa4d9c](https://github.com/kouts/vue3-ts-vite-starter-template/commit/cfa4d9c0ef9415f1695fae23c37b6cecbeb78e96))
+
 ## [1.0.9](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.8...v1.0.9) (2023-02-01)
 
 
