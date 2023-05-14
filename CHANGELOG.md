@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.13...v1.0.14) (2023-05-14)
+
+
+### Bug Fixes
+
+* updated vue to v3.3 ([7de21a3](https://github.com/kouts/vue3-ts-vite-starter-template/commit/7de21a3647e27af2b6dbb67dcdc51f756a1213ac))
+
 ## [1.0.13](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.12...v1.0.13) (2023-04-29)
 
 
