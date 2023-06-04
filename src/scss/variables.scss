@@ -6,10 +6,11 @@ $text-muted: #4e6e8e;
 $gray-900: #273849;
 $dark: #273849;
 
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/maps";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/utilities";
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/variables-dark';
+@import '~bootstrap/scss/maps';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
 
-$navbar-dark-color: rgba($white, .7);
+$navbar-dark-color: rgba($white, 0.7);
