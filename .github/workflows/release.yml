@@ -32,7 +32,7 @@ jobs:
         run: pnpm i -r
 
       - name: Install semantic-release extra plugins 📦
-        run: pnpm install --save-dev @semantic-release/changelog @semantic-release/git
+        run: pnpm install --save-dev semantic-release @semantic-release/changelog @semantic-release/git
 
       - name: Run linter 👀
         run: pnpm run lint-fix
