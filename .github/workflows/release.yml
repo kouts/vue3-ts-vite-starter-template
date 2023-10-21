@@ -26,10 +26,12 @@ jobs:
           check-latest: true
 
       - name: Setup pnpm 📦
-        run: npm i -g pnpm@8.9.2
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.9.2
 
       - name: Install dependencies 📦
-        run: pnpm i -r
+        run: pnpm install
 
       - name: Install semantic-release extra plugins 📦
         run: pnpm install --save-dev semantic-release @semantic-release/changelog @semantic-release/git
