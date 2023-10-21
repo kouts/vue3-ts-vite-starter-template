@@ -25,23 +25,26 @@ jobs:
           node-version: ${{ matrix.node }}
           check-latest: true
 
+      - name: Setup pnpm 📦
+        run: npm i -g pnpm@8.9.2
+
       - name: Install dependencies 📦
-        run: npm install
+        run: pnpm i -r
 
       - name: Install semantic-release extra plugins 📦
-        run: npm install --save-dev @semantic-release/changelog @semantic-release/git
+        run: pnpm install --save-dev @semantic-release/changelog @semantic-release/git
 
       - name: Run linter 👀
-        run: npm run lint-fix
+        run: pnpm run lint-fix
 
       - name: Typecheck 👀
-        run: npm run typecheck
+        run: pnpm run typecheck
 
       - name: Run tests 🧪
-        run: npm run test:unit
+        run: pnpm run test:unit
 
       - name: Build
-        run: npm run build
+        run: pnpm run build
 
       - name: Release
         env:

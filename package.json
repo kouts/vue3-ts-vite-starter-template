@@ -4,7 +4,7 @@
   "version": "0.0.0-semantic-release",
   "license": "MIT",
   "repository": "https://github.com/kouts/vue3-ts-vite-starter-template",
-  "packageManager": "pnpm",
+  "packageManager": "pnpm@8.9.2",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "vite",
