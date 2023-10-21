@@ -1,3 +1,10 @@
+## [1.0.18](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.17...v1.0.18) (2023-10-21)
+
+
+### Bug Fixes
+
+* added pnpm/action-setup to release.yml ([48bd3c3](https://github.com/kouts/vue3-ts-vite-starter-template/commit/48bd3c3b5f5c10772dde5b172f07e0409960f7fd))
+
 ## [1.0.17](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.16...v1.0.17) (2023-10-21)
 
 
