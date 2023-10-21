@@ -1,3 +1,10 @@
+## [1.0.17](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.16...v1.0.17) (2023-10-21)
+
+
+### Bug Fixes
+
+* switched to pnpm ([2104cc6](https://github.com/kouts/vue3-ts-vite-starter-template/commit/2104cc6b8b556675644bbf42cd65711b4cd2e519))
+
 ## [1.0.16](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.15...v1.0.16) (2023-07-04)
 
 
