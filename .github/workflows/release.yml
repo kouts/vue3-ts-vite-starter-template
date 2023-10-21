@@ -43,7 +43,7 @@ jobs:
         run: pnpm run typecheck
 
       - name: Run tests 🧪
-        run: pnpm run test:unit --if-present
+        run: pnpm run test:unit
 
       - name: Build
         run: pnpm run build
