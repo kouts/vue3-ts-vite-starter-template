@@ -25,28 +25,23 @@ jobs:
           node-version: ${{ matrix.node }}
           check-latest: true
 
-      - name: Setup pnpm 📦
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8.9.2
-
       - name: Install dependencies 📦
-        run: pnpm install
+        run: npm install
 
       - name: Install semantic-release extra plugins 📦
-        run: pnpm install --save-dev @semantic-release/changelog @semantic-release/git
+        run: npm install --save-dev @semantic-release/changelog @semantic-release/git
 
       - name: Run linter 👀
-        run: pnpm run lint-fix
+        run: npm run lint-fix
 
       - name: Typecheck 👀
-        run: pnpm run typecheck
+        run: npm run typecheck
 
       - name: Run tests 🧪
-        run: pnpm run test:unit
+        run: npm run test:unit
 
       - name: Build
-        run: pnpm run build
+        run: npm run build
 
       - name: Release
         env:
