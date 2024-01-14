@@ -1,3 +1,11 @@
+## [1.0.20](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.19...v1.0.20) (2024-01-14)
+
+
+### Bug Fixes
+
+* added semantic release job ([6cab224](https://github.com/kouts/vue3-ts-vite-starter-template/commit/6cab224e0af2471fd19365e09350a18379715bff))
+* updated npm packages ([9dfd2ef](https://github.com/kouts/vue3-ts-vite-starter-template/commit/9dfd2efa4bf29e3320bdfcf60c38507a11c2eb05))
+
 ## [1.0.19](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.18...v1.0.19) (2023-12-31)
 
 
