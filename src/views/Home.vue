@@ -14,12 +14,12 @@
       @dragover.prevent="showDropPlace($event, item, index)"
       @dragenter.prevent
       @drop="moveElem($event, item, index)"
-      @dragend.prevent="dragEndClear()"
+      @dragend.prevent="dragEndClear"
     >
       <div
         class="list__elem"
         :class="{
-          'list__elem--is-dragged': dragedElem && item.id === dragedElem.id
+          'list__elem--is-dragged': draggedEl && item.id === draggedEl.id
         }"
       >
         <div>{{ item.name }} <button class="btn-drag">===</button></div>
@@ -39,23 +39,23 @@ export default {
         { id: 3, name: 'Name 3', order: 3 },
         { id: 4, name: 'Name 4', order: 4 }
       ],
-      dragedElem: null,
-      overElem: null,
-      targetElem: null
+      draggedEl: null,
+      overEl: null,
+      targetEl: null
     }
   },
   computed: {
     handleDropClasses() {
       return (item) => {
-        if (!this.overElem || !this.overElem.id) {
+        if (!this.overEl || !this.overEl.id) {
           return ''
         }
-        if (this.overElem.id === item.id && item.order < this.dragedElem.order) {
+        if (this.overEl.id === item.id && item.order < this.draggedEl.order) {
           console.log('before')
 
           return 'drop-place drop-place--before'
         }
-        if (this.overElem.id === item.id && item.order > this.dragedElem.order) {
+        if (this.overEl.id === item.id && item.order > this.draggedEl.order) {
           console.log('after')
 
           return 'drop-place drop-place--after'
@@ -65,33 +65,35 @@ export default {
   },
   methods: {
     onMousedown(event) {
-      this.targetElem = event.target
+      this.targetEl = event.target
     },
     dragEndClear() {
       console.log('dragEnd')
-      this.dragedElem = null
-      this.overElem = null
+      this.draggedEl = null
+      this.overEl = null
     },
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     pickupElem(event, elem, index) {
-      if (this.targetElem.classList.contains('btn-drag') === false) {
+      if (this.targetEl.classList.contains('btn-drag') === false) {
         event.preventDefault()
       } else {
         event.dataTransfer.dropEffect = 'move'
         event.dataTransfer.effectAllowed = 'move'
-        this.dragedElem = { ...elem }
+        this.draggedEl = { ...elem }
       }
     },
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     showDropPlace(event, elem, index) {
-      if (elem.id !== this.dragedElem.id) {
-        this.overElem = { ...elem }
+      if (elem.id !== this.draggedEl.id) {
+        this.overEl = { ...elem }
       } else {
-        this.overElem = null
+        this.overEl = null
       }
     },
     moveElem(event, elem, index) {
       console.log(`moveElem: event: ${event} | elem: ${elem} | index: ${index}`)
-      this.items = this.items.filter((item) => item.id !== this.dragedElem.id)
-      this.items.splice(index, 0, { ...this.dragedElem })
+      this.items = this.items.filter((item) => item.id !== this.draggedEl.id)
+      this.items.splice(index, 0, { ...this.draggedEl })
       this.items.forEach((item, index) => (item.order = index + 1))
     }
   }
