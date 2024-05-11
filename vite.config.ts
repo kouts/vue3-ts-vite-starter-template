@@ -1,7 +1,6 @@
 import vue from '@vitejs/plugin-vue'
-import { defineConfig } from 'vite'
+import { type Plugin, defineConfig } from 'vite'
 import { resolve } from 'path'
-import type { Plugin } from 'vite'
 
 const transformHtmlPlugin = (data: Record<string, string>): Plugin => ({
   name: 'transform-html',
@@ -31,6 +30,21 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `@import "./src/scss/variables";`
+      }
+    }
+  },
+  test: {
+    globals: true,
+    globalSetup: './tests/vitest.global-setup.ts',
+    setupFiles: ['./tests/vitest.globals.ts'],
+    environment: 'jsdom',
+    reporters: ['default'],
+    coverage: {
+      reporter: ['text', 'json']
+    },
+    server: {
+      deps: {
+        inline: ['@pequity/squirrel']
       }
     }
   }
