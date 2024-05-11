@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto max-w-screen-xl px-4">
     <div class="flex justify-center">
-      <img alt="Vue logo" src="@/assets/logo.png" />
+      <div alt="Vue logo" class="h-52 w-52 bg-[url('@/assets/logo.svg')] bg-no-repeat" />
     </div>
     <hello-world msg="Welcome to Vue.js 3 Vite starter template" class="mt-2" />
   </div>
