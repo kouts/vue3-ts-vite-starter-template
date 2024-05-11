@@ -1,3 +1,10 @@
+## [1.0.23](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.22...v1.0.23) (2024-05-11)
+
+
+### Bug Fixes
+
+* fixed vitest types in tsconfig ([856119e](https://github.com/kouts/vue3-ts-vite-starter-template/commit/856119e887acd92b88bad7d7f83a8a40961f5931))
+
 ## [1.0.22](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.21...v1.0.22) (2024-05-11)
 
 
