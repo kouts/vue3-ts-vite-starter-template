@@ -1,3 +1,11 @@
+## [1.0.22](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.21...v1.0.22) (2024-05-11)
+
+
+### Bug Fixes
+
+* added vitest for unit testing ([7633857](https://github.com/kouts/vue3-ts-vite-starter-template/commit/7633857590b4ff9bfa0f7ddb954391560e491dab))
+* upgraded node to v20, fixed release config ([419d316](https://github.com/kouts/vue3-ts-vite-starter-template/commit/419d3160bef38f417778e610bc9983a129df9501))
+
 ## [1.0.21](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.20...v1.0.21) (2024-03-26)
 
 
