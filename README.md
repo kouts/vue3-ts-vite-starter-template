@@ -5,7 +5,7 @@ A single page app [Vite](https://vitejs.dev) starter template, created to easily
 **Features**
 
 - TypeScript
-- Jest for unit testing
+- Vitest for unit testing
 - Pinia for state management
 - Vue Router 4 for client-side routing
 - Bootstrap 5.2 for layout and styling
