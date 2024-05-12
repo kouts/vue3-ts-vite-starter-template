@@ -1,6 +1,6 @@
 {
   "name": "vue3-ts-vite-starter-template",
-  "description": "Vue.js 3 TypeScript / Vite starter template with Pinia, Vue Router, Bootstrap and more.",
+  "description": "Vue.js 3 TypeScript / Vite starter template with Pinia, Vue Router, Tailwind and more.",
   "version": "0.0.0-semantic-release",
   "license": "MIT",
   "repository": "https://github.com/kouts/vue3-ts-vite-starter-template",

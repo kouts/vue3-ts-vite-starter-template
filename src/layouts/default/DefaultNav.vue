@@ -2,7 +2,7 @@
   <nav class="fixed start-0 top-0 z-20 w-full border-b border-slate-200 bg-white">
     <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between px-4 py-3 md:justify-normal md:py-4">
       <router-link to="/" class="flex items-center space-x-3 no-underline rtl:space-x-reverse">
-        <span class="self-center whitespace-nowrap text-2xl font-semibold">ProjectName</span>
+        <span class="self-center whitespace-nowrap text-2xl font-semibold text-slate-600">ProjectName</span>
       </router-link>
       <div class="flex space-x-3 md:space-x-0 rtl:space-x-reverse">
         <button
@@ -30,7 +30,7 @@
         :class="['w-full items-center justify-between md:order-1 md:ml-8 md:flex md:w-auto', { hidden: !navbarExpanded }]"
       >
         <ul
-          class="mt-4 flex flex-col rounded-lg border border-slate-100 bg-slate-50 p-4 font-semibold md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse dark:border-slate-700 dark:bg-slate-800 md:dark:bg-slate-900"
+          class="mt-4 flex flex-col rounded-lg border border-slate-100 bg-slate-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse dark:border-slate-700 dark:bg-slate-800 md:dark:bg-slate-900"
         >
           <li>
             <router-link
