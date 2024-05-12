@@ -1,11 +1,11 @@
 <template>
-  <div class="container">
-    <h1>This is the about page</h1>
+  <div class="mx-auto max-w-screen-xl px-4">
+    <h1 class="text-4xl">This is the about page</h1>
   </div>
 </template>
 
-<script lang="ts">
-export default {
+<script setup lang="ts">
+defineOptions({
   name: 'About'
-}
+})
 </script>
