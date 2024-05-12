@@ -1,3 +1,15 @@
+## [1.0.24](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.23...v1.0.24) (2024-05-12)
+
+
+### Bug Fixes
+
+* added Inter font ([f26b195](https://github.com/kouts/vue3-ts-vite-starter-template/commit/f26b195e23bc7df21d53c4f9a3ca1afcd492688c))
+* added tailwind ([e0ac526](https://github.com/kouts/vue3-ts-vite-starter-template/commit/e0ac526dcdea849211841428deaee688592c5e80))
+* changed vue logo to svg ([f874e29](https://github.com/kouts/vue3-ts-vite-starter-template/commit/f874e290bbe75661548d422be84ba40a896287b2))
+* converted styling to tailwind ([a520c97](https://github.com/kouts/vue3-ts-vite-starter-template/commit/a520c97f9212bfaf3ac833016c0c6c0f8165ba3f))
+* fixed colors ([5c11f49](https://github.com/kouts/vue3-ts-vite-starter-template/commit/5c11f49cfc152bbcc27d988d04093f91b517cd25))
+* top nav spacing ([149b9f2](https://github.com/kouts/vue3-ts-vite-starter-template/commit/149b9f27145a1954fbf04b2b253199efde50d346))
+
 ## [1.0.23](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.22...v1.0.23) (2024-05-11)
 
 
