@@ -1,6 +1,6 @@
 <template>
   <nav class="fixed start-0 top-0 z-20 w-full border-b border-slate-200 bg-white">
-    <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4 md:justify-normal">
+    <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between px-4 py-3 md:justify-normal md:py-4">
       <router-link to="/" class="flex items-center space-x-3 no-underline rtl:space-x-reverse">
         <span class="self-center whitespace-nowrap text-2xl font-semibold">ProjectName</span>
       </router-link>
@@ -8,7 +8,7 @@
         <button
           data-collapse-toggle="navbar-sticky"
           type="button"
-          class="inline-flex h-8 w-8 items-center justify-center rounded-lg p-2 text-sm hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200 md:hidden"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200 md:hidden"
           aria-controls="navbar-sticky"
           :aria-expanded="navbarExpanded"
           @click="toggleNavbar"
