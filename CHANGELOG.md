@@ -1,3 +1,10 @@
+## [1.0.25](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.24...v1.0.25) (2024-06-22)
+
+
+### Bug Fixes
+
+* fixed closing navbar on links click ([d95daac](https://github.com/kouts/vue3-ts-vite-starter-template/commit/d95daac531b282144f7e9ec5c9545ad445c700ce))
+
 ## [1.0.24](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.23...v1.0.24) (2024-05-12)
 
 
