@@ -37,6 +37,7 @@
               to="/"
               class="block rounded px-3 py-2 no-underline hover:text-emerald-600 md:bg-transparent md:p-0 md:hover:text-emerald-600"
               :active-class="activeClass"
+              @click="closeNavBar"
             >
               Home
             </router-link>
@@ -46,6 +47,7 @@
               to="/about"
               class="block rounded px-3 py-2 no-underline hover:text-emerald-600 md:bg-transparent md:p-0 md:hover:text-emerald-600"
               :active-class="activeClass"
+              @click="closeNavBar"
             >
               About
             </router-link>
@@ -64,5 +66,9 @@ const activeClass = 'bg-emerald-600 text-white hover:text-white md:!text-emerald
 
 const toggleNavbar = () => {
   navbarExpanded.value = !navbarExpanded.value
+}
+
+const closeNavBar = () => {
+  navbarExpanded.value = false
 }
 </script>
