@@ -27,7 +27,7 @@
     "forceConsistentCasingInFileNames": true,
     "types": [
       "vite/client",
-      "vitest",
+      "vitest/globals",
       "jsdom",
       "node",
     ],
