@@ -1,3 +1,10 @@
+## [1.0.27](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.26...v1.0.27) (2024-06-30)
+
+
+### Bug Fixes
+
+* fixed vitest types ([303d9cd](https://github.com/kouts/vue3-ts-vite-starter-template/commit/303d9cd74958f5eed4c26381f6b22b05d2db3c66))
+
 ## [1.0.26](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.25...v1.0.26) (2024-06-30)
 
 
