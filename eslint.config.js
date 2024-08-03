@@ -3,13 +3,21 @@ import pluginImport from 'eslint-plugin-import-x'
 import prettier from 'eslint-plugin-prettier/recommended'
 import pluginSimpleImportSort from 'eslint-plugin-simple-import-sort'
 import vue from 'eslint-plugin-vue'
-import neostandard, { plugins } from 'neostandard'
+import neostandard, { plugins, resolveIgnoresFromGitignore } from 'neostandard'
 
 const ts = plugins['typescript-eslint']
 
 export default [
   {
-    ignores: ['**/node_modules/**', '{tmp,temp}/**', '**/*.min.js', 'vendor/**', 'dist/**', 'public/**']
+    ignores: [
+      '**/node_modules/**',
+      '{tmp,temp}/**',
+      '**/*.min.js',
+      'vendor/**',
+      'dist/**',
+      'public/**',
+      ...resolveIgnoresFromGitignore()
+    ]
   },
 
   // Neostandard
