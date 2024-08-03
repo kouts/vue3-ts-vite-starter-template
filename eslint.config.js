@@ -70,9 +70,32 @@ export default [
   ...ts.configs.recommended,
   {
     rules: {
-      '@typescript-eslint/no-unused-vars': 'warn',
-      '@typescript-eslint/no-explicit-any': 'warn',
-      '@typescript-eslint/array-type': ['error', { default: 'array' }]
+      // Prefer T[] instead of Array<T>
+      '@typescript-eslint/array-type': ['error', { default: 'array' }],
+
+      // Prefer type over interface for objects
+      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+
+      // Fix type imports
+      '@typescript-eslint/consistent-type-imports': [
+        'error',
+        {
+          prefer: 'type-imports',
+          fixStyle: 'inline-type-imports'
+        }
+      ],
+
+      // Allow _ for unused variables
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          args: 'none',
+          caughtErrors: 'none',
+          ignoreRestSiblings: true,
+          vars: 'all',
+          argsIgnorePattern: '^_'
+        }
+      ]
     }
   },
 
@@ -96,8 +119,44 @@ export default [
     rules: {
       // Overrides for vue/(vue3-)recommended preset
       'vue/max-attributes-per-line': 'off',
-      'vue/html-self-closing': 'off',
-      'vue/singleline-html-element-content-newline': 'off'
+      'vue/singleline-html-element-content-newline': 'off',
+
+      // Strengthen vue/(vue3-)recommended preset for autofix
+      // https://github.com/vuejs/eslint-plugin-vue/blob/master/lib/configs/recommended.js
+      'vue/attributes-order': 'error',
+      'vue/component-tags-order': 'error',
+      'vue/no-lone-template': 'error',
+      'vue/no-multiple-slot-args': 'error',
+      'vue/no-v-html': 'error',
+      'vue/order-in-components': 'error',
+      'vue/this-in-template': 'error',
+      'vue/require-prop-types': 'error',
+
+      // Enforce PascalCase for Vue components
+      'vue/component-name-in-template-casing': ['error', 'PascalCase', { registeredComponentsOnly: false, ignores: [] }],
+
+      // Do not allow inline styles
+      'vue/no-static-inline-styles': ['error', { allowBinding: false }],
+
+      // Require explicit emits
+      'vue/require-explicit-emits': 'error',
+
+      // Require component to have a name property
+      'vue/require-name-property': 'error',
+
+      // Require components that don't have any content to self-close
+      'vue/html-self-closing': [
+        'error',
+        {
+          html: {
+            void: 'always',
+            normal: 'never',
+            component: 'always'
+          },
+          svg: 'always',
+          math: 'always'
+        }
+      ]
     }
   },
 
