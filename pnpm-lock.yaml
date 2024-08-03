@@ -72,9 +72,6 @@ importers:
       eslint-plugin-vue:
         specifier: ^9.27.0
         version: 9.27.0(eslint@9.8.0)
-      globals:
-        specifier: ^15.9.0
-        version: 15.9.0
       husky:
         specifier: ^9.1.4
         version: 9.1.4

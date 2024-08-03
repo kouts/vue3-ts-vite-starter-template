@@ -3,7 +3,6 @@ import pluginImport from 'eslint-plugin-import-x'
 import prettier from 'eslint-plugin-prettier/recommended'
 import pluginSimpleImportSort from 'eslint-plugin-simple-import-sort'
 import vue from 'eslint-plugin-vue'
-import globals from 'globals'
 import neostandard, { plugins } from 'neostandard'
 
 const ts = plugins['typescript-eslint']
@@ -12,17 +11,25 @@ export default [
   {
     ignores: ['**/node_modules/**', '{tmp,temp}/**', '**/*.min.js', 'vendor/**', 'dist/**', 'public/**']
   },
-  {
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-        ...globals.node
-      }
-    }
-  },
 
   // Neostandard
   ...neostandard({ noStyle: true, semi: false, ts: true }),
+  {
+    rules: {
+      // Enforce blank lines between the given 2 kinds of statements
+      'padding-line-between-statements': [
+        'error',
+        { blankLine: 'always', prev: '*', next: 'return' },
+        { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
+        { blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var'] },
+        { blankLine: 'always', prev: 'directive', next: '*' },
+        { blankLine: 'any', prev: 'directive', next: 'directive' }
+      ],
+      // Console and debugger settings depending whether we're on production or not
+      'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+      'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    }
+  },
 
   // Import
   {
