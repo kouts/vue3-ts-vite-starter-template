@@ -1,8 +1,9 @@
-import globals from 'globals'
-import vue from 'eslint-plugin-vue'
-import prettier from 'eslint-plugin-prettier/recommended'
-import neostandard, { plugins } from 'neostandard'
 import pluginImport from 'eslint-plugin-import-x'
+import prettier from 'eslint-plugin-prettier/recommended'
+import pluginSimpleImportSort from 'eslint-plugin-simple-import-sort'
+import vue from 'eslint-plugin-vue'
+import globals from 'globals'
+import neostandard, { plugins } from 'neostandard'
 
 const ts = plugins['typescript-eslint']
 
@@ -37,6 +38,23 @@ export default [
       'import/no-webpack-loader-syntax': 'error',
       'import/no-absolute-path': ['error', { esmodule: true, commonjs: true, amd: false }],
       'import/newline-after-import': ['error', { count: 1 }]
+    }
+  },
+
+  // Sort-imports
+  {
+    plugins: {
+      'simple-import-sort': pluginSimpleImportSort
+    },
+    rules: {
+      'simple-import-sort/imports': [
+        'error',
+        // Remove all blank lines between imports
+        {
+          groups: [['^\\u0000', '^node:', '^@?\\w', '^', '^\\.']]
+        }
+      ],
+      'simple-import-sort/exports': 'error'
     }
   },
 

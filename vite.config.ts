@@ -1,8 +1,8 @@
 /// <reference types="vitest" />
 
 import vue from '@vitejs/plugin-vue'
-import { type Plugin, defineConfig } from 'vite'
 import { resolve } from 'path'
+import { defineConfig, type Plugin } from 'vite'
 
 const transformHtmlPlugin = (data: Record<string, string>): Plugin => ({
   name: 'transform-html',
