@@ -1,3 +1,4 @@
+import js from '@eslint/js'
 import html from 'eslint-plugin-html'
 import pluginImport from 'eslint-plugin-import-x'
 import prettier from 'eslint-plugin-prettier/recommended'
@@ -19,6 +20,9 @@ export default [
       ...resolveIgnoresFromGitignore()
     ]
   },
+
+  // JavaScript
+  js.configs.recommended,
 
   // Neostandard
   ...neostandard({ noStyle: true, semi: false, ts: true }),
