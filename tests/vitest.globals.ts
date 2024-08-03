@@ -2,7 +2,7 @@ import { beforeAll } from 'vitest'
 
 beforeAll(() => {
   globalThis.ResizeObserver = class ResizeObserver {
-    // eslint-disable-next-line no-useless-constructor
+    // eslint-disable-next-line @typescript-eslint/no-useless-constructor
     constructor() {
       //
     }

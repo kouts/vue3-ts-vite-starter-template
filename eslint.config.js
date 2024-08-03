@@ -2,6 +2,7 @@ import globals from 'globals'
 import vue from 'eslint-plugin-vue'
 import prettier from 'eslint-plugin-prettier/recommended'
 import neostandard, { plugins } from 'neostandard'
+import pluginImport from 'eslint-plugin-import-x'
 
 const ts = plugins['typescript-eslint']
 
@@ -20,6 +21,23 @@ export default [
 
   // Neostandard
   ...neostandard({ noStyle: true, semi: false, ts: true }),
+
+  // Import
+  {
+    plugins: {
+      import: pluginImport
+    },
+    rules: {
+      'import/first': 'error',
+      'import/no-duplicates': 'error',
+      'import/no-mutable-exports': 'error',
+      'import/no-named-default': 'error',
+      'import/no-self-import': 'error',
+      'import/no-webpack-loader-syntax': 'error',
+      'import/order': 'error',
+      'import/newline-after-import': ['error', { count: 1 }]
+    }
+  },
 
   // TypeScript
   ...ts.configs.recommended,
