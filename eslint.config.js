@@ -1,3 +1,4 @@
+import html from 'eslint-plugin-html'
 import pluginImport from 'eslint-plugin-import-x'
 import prettier from 'eslint-plugin-prettier/recommended'
 import pluginSimpleImportSort from 'eslint-plugin-simple-import-sort'
@@ -9,7 +10,7 @@ const ts = plugins['typescript-eslint']
 
 export default [
   {
-    ignores: ['node_modules/*', 'dist/*']
+    ignores: ['**/node_modules/**', '{tmp,temp}/**', '**/*.min.js', 'vendor/**', 'dist/**', 'public/**']
   },
   {
     languageOptions: {
@@ -41,7 +42,7 @@ export default [
     }
   },
 
-  // Sort-imports
+  // Sort imports
   {
     plugins: {
       'simple-import-sort': pluginSimpleImportSort
@@ -68,6 +69,12 @@ export default [
     }
   },
 
+  // HTML
+  {
+    files: ['**/*.html'],
+    plugins: { html }
+  },
+
   // Vue
   ...vue.configs['flat/recommended'],
   {
@@ -86,6 +93,8 @@ export default [
       'vue/singleline-html-element-content-newline': 'off'
     }
   },
+
+  // Project-specific overrides
   {
     name: 'project-specific-overrides',
     // Disable multi-word-component-names for pages and layouts
