@@ -1,8 +1,9 @@
 import globals from 'globals'
-import js from '@eslint/js'
-import ts from 'typescript-eslint'
 import vue from 'eslint-plugin-vue'
 import prettier from 'eslint-plugin-prettier/recommended'
+import neostandard, { plugins } from 'neostandard'
+
+const ts = plugins['typescript-eslint']
 
 export default [
   {
@@ -17,14 +18,8 @@ export default [
     }
   },
 
-  // JavaScript
-  js.configs.recommended,
-  {
-    rules: {
-      'no-unused-vars': 'off',
-      'no-undef': 'off'
-    }
-  },
+  // Neostandard
+  ...neostandard({ noStyle: true, semi: false, ts: true }),
 
   // TypeScript
   ...ts.configs.recommended,
