@@ -1,8 +1,8 @@
 <template>
   <div class="min-h-screen pt-24 text-slate-700">
-    <default-nav />
+    <DefaultNav />
     <slot />
-    <default-footer />
+    <DefaultFooter />
   </div>
 </template>
 
