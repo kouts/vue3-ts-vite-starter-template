@@ -3,7 +3,7 @@
     <div class="flex justify-center">
       <div alt="Vue logo" class="mt-8 h-52 w-52 bg-[url('@/assets/logo.svg')] bg-no-repeat" />
     </div>
-    <hello-world msg="Vue.js 3 starter template" class="mt-2" />
+    <HelloWorld msg="Vue.js 3 starter template" class="mt-2" />
   </div>
 </template>
 

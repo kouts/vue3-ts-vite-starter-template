@@ -1,7 +1,7 @@
-import App from './App.vue'
-import Default from '@/layouts/default/Default.vue'
-import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import { createApp } from 'vue'
+import Default from '@/layouts/default/Default.vue'
+import App from './App.vue'
 import { router } from './router'
 
 const app = createApp(App)
