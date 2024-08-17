@@ -15,14 +15,14 @@
 
 <script setup lang="ts">
 defineOptions({
-  name: 'HelloWorld'
+  name: 'HelloWorld',
 })
 
 defineProps({
   msg: {
     type: String,
-    default: ''
-  }
+    default: '',
+  },
 })
 </script>
 

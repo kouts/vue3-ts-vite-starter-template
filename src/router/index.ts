@@ -8,8 +8,8 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      layout: 'default'
-    }
+      layout: 'default',
+    },
   },
   {
     path: '/about',
@@ -19,14 +19,14 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
     meta: {
-      layout: 'default'
-    }
-  }
+      layout: 'default',
+    },
+  },
 ]
 const router = createRouter({
   linkActiveClass: 'active',
   history,
-  routes
+  routes,
 })
 
 export { router }

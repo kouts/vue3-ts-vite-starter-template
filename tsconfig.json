@@ -19,7 +19,7 @@
     "esModuleInterop": true,
     "jsx": "preserve",
     "skipLibCheck": true,
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "noUnusedLocals": true,
     "strictNullChecks": true,
