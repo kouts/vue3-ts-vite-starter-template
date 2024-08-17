@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.1.0...v1.1.1) (2024-08-17)
+
+
+### Bug Fixes
+
+* updated eslint config ([c0462da](https://github.com/kouts/vue3-ts-vite-starter-template/commit/c0462da747f6695042fc99957afc76aee3554f2a))
+
 # [1.1.0](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.0.29...v1.1.0) (2024-08-04)
 
 
