@@ -4,11 +4,17 @@
     <p class="mt-4">
       A project setup using Vite, created to easily scaffold new Vue.js 3 projects.
       <br />
-      Find out more at
-      <a class="text-emerald-500 hover:text-emerald-600" href="https://vitejs.dev/guide/" target="_blank" rel="noopener"
-        >Vite documentation</a
+    </p>
+
+    <p>
+      Find out more at<a
+        class="text-emerald-500 hover:text-emerald-600"
+        href="https://vitejs.dev/guide/"
+        target="_blank"
+        rel="noopener"
       >
-      .
+        Vite documentation</a
+      >.
     </p>
   </div>
 </template>
