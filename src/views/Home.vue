@@ -11,6 +11,6 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 
 defineOptions({
-  name: 'Home'
+  name: 'Home',
 })
 </script>

@@ -10,8 +10,8 @@ const transformHtmlPlugin = (data: Record<string, string>): Plugin => ({
     order: 'pre',
     handler(html: string) {
       return html.replace(/<%=\s*(\w+)\s*%>/gi, (match, p1) => data[p1] || '')
-    }
-  }
+    },
+  },
 })
 
 export default defineConfig({
@@ -19,20 +19,20 @@ export default defineConfig({
     vue(),
     transformHtmlPlugin({
       title: 'ProjectName',
-      description: 'A single page application created using Vue.js 3'
-    })
+      description: 'A single page application created using Vue.js 3',
+    }),
   ],
   resolve: {
     alias: {
-      '@': resolve(__dirname, '/src')
-    }
+      '@': resolve(__dirname, '/src'),
+    },
   },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "./src/scss/variables";`
-      }
-    }
+        additionalData: `@import "./src/scss/variables";`,
+      },
+    },
   },
   test: {
     globals: true,
@@ -41,12 +41,7 @@ export default defineConfig({
     environment: 'jsdom',
     reporters: ['default'],
     coverage: {
-      reporter: ['text', 'json']
+      reporter: ['text', 'json'],
     },
-    server: {
-      deps: {
-        inline: ['@pequity/squirrel']
-      }
-    }
-  }
+  },
 })

@@ -6,6 +6,6 @@
 
 <script setup lang="ts">
 defineOptions({
-  name: 'About'
+  name: 'About',
 })
 </script>
