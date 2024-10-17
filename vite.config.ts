@@ -31,7 +31,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         api: 'modern-compiler',
-        additionalData: `@import "@/scss/variables";`,
+        additionalData: `@use "@/scss/variables" as *;`,
       },
     },
   },
