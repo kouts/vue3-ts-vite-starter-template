@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.1.6...v1.1.7) (2024-10-26)
+
+
+### Bug Fixes
+
+* fixed release job to not run in case ci job errored out ([0e76524](https://github.com/kouts/vue3-ts-vite-starter-template/commit/0e76524c812ebb898cf4447b17bc85ca253e7fb5))
+
 ## [1.1.6](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.1.5...v1.1.6) (2024-10-17)
 
 
