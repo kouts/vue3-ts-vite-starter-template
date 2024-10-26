@@ -45,6 +45,7 @@ jobs:
         run: pnpm run build
   release:
     runs-on: ${{ matrix.os }}
+    needs: ci
 
     strategy:
       matrix:
