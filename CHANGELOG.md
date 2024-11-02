@@ -1,3 +1,10 @@
+## [1.1.9](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.1.8...v1.1.9) (2024-11-02)
+
+
+### Bug Fixes
+
+* fixed relative import statements ([25ffe21](https://github.com/kouts/vue3-ts-vite-starter-template/commit/25ffe217e4507d35a781877728895a359b225b42))
+
 ## [1.1.8](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.1.7...v1.1.8) (2024-11-02)
 
 
