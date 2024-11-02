@@ -22,6 +22,8 @@ export default {
           /^router-link(|-exact)-active$/,
           /data-v-.*/,
           /^active/,
+          /.*-\[.*\]/, // Matches all classes with `-[...]` (Tailwind JIT classes)
+          /^(!)?[a-z]+:!?.*/, // Matches responsive and important modifiers, like `md:!text-emerald-500`
         ],
       }),
   ],
