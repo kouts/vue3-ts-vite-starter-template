@@ -9,19 +9,28 @@ export default {
     tailwindcss,
     autoprefixer,
     IN_PRODUCTION &&
+      // Reference https://github.com/Developmint/nuxt-purgecss/blob/main/src/config.ts
       postcssPurgecss({
         content: ['./**/*.html', './src/**/*.vue'],
         defaultExtractor(content) {
-          const contentWithoutStyleBlocks = content.replace(/<style[^]+?<\/style>/gi, '')
+          const contentWithoutStyleBlocks = content.replace(/<style[^]+?<\/style>/gi, '') // Remove inline vue styles
 
-          return contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || []
+          return contentWithoutStyleBlocks.match(/[\w-.:/]+(?<!:)/g) || [] // Default extractor
         },
         safelist: [
-          /-(leave|enter|appear)(|-(to|from|active))$/,
-          /^(?!(|.*?:)cursor-move).+-move$/,
-          /^router-link(|-exact)-active$/,
-          /data-v-.*/,
+          'body',
+          'html',
+          /-(leave|enter|appear)(|-(to|from|active))$/, // Normal transitions
+          /^router-link(|-exact)-active$/, // Router link classes
+          /^(?!(|.*?:)cursor-move).+-move$/, // Move transitions
+          /.*data-v-.*/, // Keep scoped styles
           /^active/,
+          // Vue3 selectors
+          /:slotted/,
+          /:deep/,
+          /:global/,
+          /nuxt-devtools-.*/,
+          // Tailwind classes
           /.*-\[.*\]/, // Matches all classes with `-[...]` (Tailwind JIT classes)
           /^(!)?[a-z]+:!?.*/, // Matches responsive and important modifiers, like `md:!text-emerald-500`
         ],
