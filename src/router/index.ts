@@ -22,6 +22,14 @@ const routes = [
       layout: 'default',
     },
   },
+  {
+    path: '/admin',
+    name: 'Admin',
+    component: () => import('../views/Admin.vue'),
+    meta: {
+      layout: 'default',
+    },
+  },
 ]
 const router = createRouter({
   linkActiveClass: 'active',
