@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.1.10...v1.1.11) (2024-11-02)
+
+
+### Bug Fixes
+
+* improved purgecss config to include new Vue 3 classes ([45654ac](https://github.com/kouts/vue3-ts-vite-starter-template/commit/45654ace01ce18a4dddce5fb584d620e0fea5ac4))
+
 ## [1.1.10](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.1.9...v1.1.10) (2024-11-02)
 
 
