@@ -1,3 +1,10 @@
+## [1.1.12](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.1.11...v1.1.12) (2024-11-02)
+
+
+### Bug Fixes
+
+* updated pnpm-lock file ([23b1f55](https://github.com/kouts/vue3-ts-vite-starter-template/commit/23b1f55e435a84e7a7002168d838b5b1b4c253e8))
+
 ## [1.1.11](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.1.10...v1.1.11) (2024-11-02)
 
 
