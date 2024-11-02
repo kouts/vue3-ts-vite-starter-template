@@ -3,6 +3,7 @@
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 import { defineConfig, type Plugin } from 'vite'
+import excludeAdminRoutesPlugin from './vite-plugin-exclude-admin-routes'
 
 const transformHtmlPlugin = (data: Record<string, string>): Plugin => ({
   name: 'transform-html',
@@ -16,6 +17,7 @@ const transformHtmlPlugin = (data: Record<string, string>): Plugin => ({
 
 export default defineConfig({
   plugins: [
+    excludeAdminRoutesPlugin(),
     vue(),
     transformHtmlPlugin({
       title: 'ProjectName',
