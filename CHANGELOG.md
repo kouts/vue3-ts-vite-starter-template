@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.1.9...v1.1.10) (2024-11-02)
+
+
+### Bug Fixes
+
+* fixed purgecss config to not strip tailwind classes in production ([a9f75e6](https://github.com/kouts/vue3-ts-vite-starter-template/commit/a9f75e6793cae5983bd8dc11cab5f567809b68b7))
+
 ## [1.1.9](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.1.8...v1.1.9) (2024-11-02)
 
 
