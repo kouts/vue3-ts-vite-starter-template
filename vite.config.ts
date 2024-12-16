@@ -14,7 +14,7 @@ const transformHtmlPlugin = (data: Record<string, string>): Plugin => ({
   },
 })
 
-export default defineConfig({
+export default defineConfig(() => ({
   plugins: [
     vue(),
     transformHtmlPlugin({
@@ -30,7 +30,6 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        api: 'modern-compiler',
         additionalData: `@use "@/scss/variables" as *;`,
       },
     },
@@ -45,4 +44,4 @@ export default defineConfig({
       reporter: ['text', 'json'],
     },
   },
-})
+}))

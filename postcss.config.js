@@ -1,4 +1,4 @@
-import postcssPurgecss from '@fullhuman/postcss-purgecss'
+import { purgeCSSPlugin } from '@fullhuman/postcss-purgecss'
 import autoprefixer from 'autoprefixer'
 import tailwindcss from 'tailwindcss'
 
@@ -10,7 +10,7 @@ export default {
     autoprefixer,
     IN_PRODUCTION &&
       // Reference https://github.com/Developmint/nuxt-purgecss/blob/main/src/config.ts
-      postcssPurgecss({
+      purgeCSSPlugin({
         content: ['./**/*.html', './src/**/*.vue'],
         defaultExtractor(content) {
           const contentWithoutStyleBlocks = content.replace(/<style[^]+?<\/style>/gi, '') // Remove inline vue styles
