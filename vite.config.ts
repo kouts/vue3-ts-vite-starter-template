@@ -14,7 +14,7 @@ const transformHtmlPlugin = (data: Record<string, string>): Plugin => ({
   },
 })
 
-export default defineConfig(() => ({
+export default defineConfig({
   plugins: [
     vue(),
     transformHtmlPlugin({
@@ -44,4 +44,4 @@ export default defineConfig(() => ({
       reporter: ['text', 'json'],
     },
   },
-}))
+})
