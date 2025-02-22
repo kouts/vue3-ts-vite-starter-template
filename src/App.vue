@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import '@/scss/app.scss'
+import '@/css/app.css'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 

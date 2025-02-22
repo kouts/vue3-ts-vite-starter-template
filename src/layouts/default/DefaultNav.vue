@@ -35,7 +35,7 @@
           <li>
             <RouterLink
               to="/"
-              class="block rounded px-3 py-2 no-underline hover:text-emerald-600 md:bg-transparent md:p-0 md:hover:text-emerald-600"
+              class="block rounded-sm px-3 py-2 no-underline hover:text-emerald-600 md:bg-transparent md:p-0 md:hover:text-emerald-600"
               :active-class="activeClass"
               @click="closeNavBar"
             >
@@ -45,7 +45,7 @@
           <li>
             <RouterLink
               to="/about"
-              class="block rounded px-3 py-2 no-underline hover:text-emerald-600 md:bg-transparent md:p-0 md:hover:text-emerald-600"
+              class="block rounded-sm px-3 py-2 no-underline hover:text-emerald-600 md:bg-transparent md:p-0 md:hover:text-emerald-600"
               :active-class="activeClass"
               @click="closeNavBar"
             >
