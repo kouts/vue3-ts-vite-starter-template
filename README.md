@@ -4,15 +4,17 @@ A single page app [Vite](https://vitejs.dev) starter template, created to easily
 
 **Features**
 
-- TypeScript
-- Vitest for unit testing
-- Pinia for state management
+- Vue 3
+- Vite 6
+- TypeScript 5
+- Vitest 3 for unit testing
+- Pinia 3 for state management
 - Vue Router 4 for client-side routing
-- Tailwind 3 for layout and styling
+- Tailwind 4 for layout and styling
 - SCSS variables inside Vue components
 - Purgecss for eliminating unused CSS
 - Basic multiple layouts feature
-- ESLint config based on `eslint:recommended` with sensible defaults :relaxed:
+- ESLint config based on [neostandard](https://github.com/neostandard/neostandard) with sensible defaults :relaxed:
 - [Prettier](https://prettier.io/) for code formatting
 - Automated release workflow with [semantic-release](https://github.com/semantic-release/semantic-release)
 
