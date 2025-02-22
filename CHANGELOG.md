@@ -1,3 +1,10 @@
+## [1.1.19](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.1.18...v1.1.19) (2025-02-22)
+
+
+### Bug Fixes
+
+* updated pinia and npm packages ([0cf7d2c](https://github.com/kouts/vue3-ts-vite-starter-template/commit/0cf7d2cfac589f768f87e49b57826a50e93b6dbb))
+
 ## [1.1.18](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.1.17...v1.1.18) (2025-02-02)
 
 
