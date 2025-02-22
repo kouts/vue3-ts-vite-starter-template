@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.1.19...v2.0.0) (2025-02-22)
+
+
+### Features
+
+* added tailwind 4 ([71ac35c](https://github.com/kouts/vue3-ts-vite-starter-template/commit/71ac35ca029d4d1e7fb3fff4e5e8bd20515fe8e0))
+
+
+### BREAKING CHANGES
+
+* added tailwind 4
+
 ## [1.1.19](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v1.1.18...v1.1.19) (2025-02-22)
 
 
