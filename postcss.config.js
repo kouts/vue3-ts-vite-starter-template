@@ -1,13 +1,9 @@
 import { purgeCSSPlugin } from '@fullhuman/postcss-purgecss'
-import autoprefixer from 'autoprefixer'
-import tailwindcss from 'tailwindcss'
 
 const IN_PRODUCTION = process.env.NODE_ENV === 'production'
 
 export default {
   plugins: [
-    tailwindcss,
-    autoprefixer,
     IN_PRODUCTION &&
       // Reference https://github.com/Developmint/nuxt-purgecss/blob/main/src/config.ts
       purgeCSSPlugin({

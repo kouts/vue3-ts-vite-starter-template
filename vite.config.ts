@@ -1,5 +1,6 @@
 /// <reference types="vitest" />
 
+import tailwindcss from '@tailwindcss/vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 import { defineConfig, type Plugin } from 'vite'
@@ -17,6 +18,7 @@ const transformHtmlPlugin = (data: Record<string, string>): Plugin => ({
 export default defineConfig({
   plugins: [
     vue(),
+    tailwindcss(),
     transformHtmlPlugin({
       title: 'ProjectName',
       description: 'A single page application created using Vue.js 3',
