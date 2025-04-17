@@ -8,7 +8,7 @@
         <button
           data-collapse-toggle="navbar-sticky"
           type="button"
-          class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200 md:hidden"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm hover:bg-slate-100 focus:outline-hidden focus:ring-2 focus:ring-slate-200 md:hidden"
           aria-controls="navbar-sticky"
           :aria-expanded="navbarExpanded"
           @click="toggleNavbar"
@@ -35,7 +35,7 @@
           <li>
             <RouterLink
               to="/"
-              class="block rounded-sm px-3 py-2 no-underline hover:text-emerald-600 md:bg-transparent md:p-0 md:hover:text-emerald-600"
+              class="block rounded-xs px-3 py-2 no-underline hover:text-emerald-600 md:bg-transparent md:p-0 md:hover:text-emerald-600"
               :active-class="activeClass"
               @click="closeNavBar"
             >
@@ -45,7 +45,7 @@
           <li>
             <RouterLink
               to="/about"
-              class="block rounded-sm px-3 py-2 no-underline hover:text-emerald-600 md:bg-transparent md:p-0 md:hover:text-emerald-600"
+              class="block rounded-xs px-3 py-2 no-underline hover:text-emerald-600 md:bg-transparent md:p-0 md:hover:text-emerald-600"
               :active-class="activeClass"
               @click="closeNavBar"
             >
@@ -62,7 +62,7 @@
 import { ref } from 'vue'
 
 const navbarExpanded = ref(false)
-const activeClass = 'bg-emerald-600 text-white hover:text-white md:!text-emerald-500'
+const activeClass = 'bg-emerald-600 text-white hover:text-white md:text-emerald-500!'
 
 const toggleNavbar = () => {
   navbarExpanded.value = !navbarExpanded.value
