@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v3.0.3...v3.0.4) (2025-04-27)
+
+
+### Bug Fixes
+
+* updated npm packages ([6257ae9](https://github.com/kouts/vue3-ts-vite-starter-template/commit/6257ae9d3131b704a7d3d6a3655b803c6771d4a0))
+
 ## [3.0.3](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v3.0.2...v3.0.3) (2025-04-17)
 
 
