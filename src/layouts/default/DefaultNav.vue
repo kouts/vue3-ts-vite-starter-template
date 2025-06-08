@@ -61,6 +61,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+defineOptions({
+  name: 'DefaultNav',
+})
+
 const navbarExpanded = ref(false)
 const activeClass = 'bg-emerald-600 text-white hover:text-white md:text-emerald-500!'
 
