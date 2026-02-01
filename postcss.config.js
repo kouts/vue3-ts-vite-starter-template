@@ -1,4 +1,4 @@
-import { purgeCSSPlugin } from '@fullhuman/postcss-purgecss'
+import purgeCSSPlugin from '@fullhuman/postcss-purgecss'
 
 const IN_PRODUCTION = process.env.NODE_ENV === 'production'
 
