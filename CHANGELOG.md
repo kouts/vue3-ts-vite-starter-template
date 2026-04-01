@@ -1,3 +1,10 @@
+## [3.0.19](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v3.0.18...v3.0.19) (2026-04-01)
+
+
+### Bug Fixes
+
+* update Vite to v8, removed Tailwind js config ([853be4c](https://github.com/kouts/vue3-ts-vite-starter-template/commit/853be4cc21c7de5d64ee318c1dc73b5263cbb685))
+
 ## [3.0.18](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v3.0.17...v3.0.18) (2026-03-01)
 
 
