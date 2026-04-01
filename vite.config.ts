@@ -37,6 +37,8 @@ export default defineConfig({
   },
   test: {
     globals: true,
+    // Clear the mocks call count before each test so that we don't have to call vi.clearAllMocks manually - https://vitest.dev/config/#clearmocks
+    clearMocks: true,
     globalSetup: './tests/vitest.global-setup.ts',
     setupFiles: ['./tests/vitest.globals.ts'],
     environment: 'jsdom',
