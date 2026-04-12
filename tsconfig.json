@@ -8,7 +8,6 @@
     "vite.config.*",
   ],
   "compilerOptions": {
-    "baseUrl": ".",
     "module": "ESNext",
     "target": "ESNext",
     "lib": [
