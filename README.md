@@ -5,11 +5,11 @@ A single page app [Vite](https://vitejs.dev) starter template, created to easily
 **Features**
 
 - Vue 3
-- Vite 6
-- TypeScript 5
-- Vitest 3 for unit testing
+- Vite 8
+- TypeScript 6
+- Vitest 4 for unit testing
 - Pinia 3 for state management
-- Vue Router 4 for client-side routing
+- Vue Router 5 for client-side routing
 - Tailwind 4 for layout and styling
 - SCSS variables inside Vue components
 - Purgecss for eliminating unused CSS
