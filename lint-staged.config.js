@@ -1,3 +1,3 @@
 export default {
-  '*.{vue,ts,js}': ['npm run lint-fix'],
+  '*.{vue,ts,js}': ['pnpm run lint-fix'],
 }
