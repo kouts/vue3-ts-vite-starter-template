@@ -1,3 +1,16 @@
+# [3.1.0](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v3.0.25...v3.1.0) (2026-05-15)
+
+
+### Bug Fixes
+
+* improved the layout setup ([f9fdb67](https://github.com/kouts/vue3-ts-vite-starter-template/commit/f9fdb674bbe029644a7eacbf0aaab323df297546))
+* updated lint staged to use pnpm ([67005d5](https://github.com/kouts/vue3-ts-vite-starter-template/commit/67005d5187b2e92c52d8c4298ca8cd826631a404))
+
+
+### Features
+
+* added knip and improved test setup ([e717609](https://github.com/kouts/vue3-ts-vite-starter-template/commit/e717609573cab2849231994fbeb356b1ea97d795))
+
 ## [3.0.25](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v3.0.24...v3.0.25) (2026-05-14)
 
 
