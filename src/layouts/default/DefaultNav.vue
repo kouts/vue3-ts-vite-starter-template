@@ -52,6 +52,16 @@
               About
             </RouterLink>
           </li>
+          <li>
+            <RouterLink
+              to="/empty"
+              class="block rounded-xs px-3 py-2 no-underline hover:text-emerald-600 md:bg-transparent md:p-0 md:hover:text-emerald-600"
+              :active-class="activeClass"
+              @click="closeNavBar"
+            >
+              Empty
+            </RouterLink>
+          </li>
         </ul>
       </div>
     </div>

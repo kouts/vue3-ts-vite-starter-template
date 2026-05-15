@@ -1,7 +1,15 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory, type RouteRecordRaw } from 'vue-router'
+import type { LayoutKey } from '@/layouts/registry'
 import Home from '@/views/Home.vue'
 
 const history = createWebHashHistory()
+
+type RouteWithLayoutMeta = Omit<RouteRecordRaw, 'meta'> & {
+  meta: {
+    layout: LayoutKey
+  }
+}
+
 const routes = [
   {
     path: '/',
@@ -22,7 +30,16 @@ const routes = [
       layout: 'default',
     },
   },
-]
+  {
+    path: '/empty',
+    name: 'Empty',
+    component: () => import('@/views/Empty.vue'),
+    meta: {
+      layout: 'empty',
+    },
+  },
+] satisfies RouteWithLayoutMeta[]
+
 const router = createRouter({
   linkActiveClass: 'active',
   history,

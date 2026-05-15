@@ -11,9 +11,10 @@ describe('DefaultNav', () => {
     const wrapper = createWrapperFor(DefaultNav)
     const routerLinks = wrapper.findAllComponents({ name: 'RouterLink' })
 
-    expect(routerLinks).toHaveLength(3)
+    expect(routerLinks).toHaveLength(4)
     expect(routerLinks[0].props('to')).toBe('/')
     expect(routerLinks[1].props('to')).toBe('/')
     expect(routerLinks[2].props('to')).toBe('/about')
+    expect(routerLinks[3].props('to')).toBe('/empty')
   })
 })
