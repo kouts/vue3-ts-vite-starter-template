@@ -13,6 +13,7 @@ A single page app [Vite](https://vitejs.dev) starter template, created to easily
 - Tailwind 4 for layout and styling
 - SCSS variables inside Vue components
 - Purgecss for eliminating unused CSS
+- Knip for detecting unused files and exports
 - Basic multiple layouts feature
 - ESLint config based on [neostandard](https://github.com/neostandard/neostandard) with sensible defaults :relaxed:
 - [Prettier](https://prettier.io/) for code formatting
@@ -42,6 +43,18 @@ pnpm run build
 pnpm run test:unit
 ```
 
+### Run unit tests in non-watch mode
+
+```
+pnpm run test:unit-nowatch
+```
+
+### Run unit tests with coverage output
+
+```
+pnpm run test:unit-coverage
+```
+
 ### Lints files
 
 ```
@@ -59,6 +72,29 @@ pnpm run lint-fix
 ```
 pnpm run typecheck
 ```
+
+### Detects unused files and exports
+
+```
+pnpm run knip
+```
+
+### Runs all quality checks
+
+```
+pnpm run quality
+```
+
+This runs `knip`, `lint`, `typecheck`, unit tests in non-watch mode, and `build`.
+
+## Testing conventions
+
+- Test files are colocated with source files using `*.spec.ts`
+- Shared test infrastructure lives in `tests/`
+- `tests/vitest.router-mock-setup.ts` provides a default router mock for route-aware tests
+- `tests/vitest.helpers.ts` exposes `createWrapperFor` for tests that need shared mount setup
+- `createWrapperFor` includes default Pinia plugin wiring and supports merged `global.directives`
+- Prefer plain `mount` for simple component tests and use `createWrapperFor` only when shared setup is required
 
 ### Customize configuration
 

@@ -15,9 +15,11 @@
     "lint": "eslint \"**/*.{vue,ts,js}\"",
     "lint-fix": "eslint --fix \"**/*.{vue,ts,js}\"",
     "test:unit": "vitest",
+    "test:unit-nowatch": "vitest run",
     "test:unit-coverage": "vitest run --coverage",
     "typecheck": "vue-tsc --noEmit",
-    "quality": "pnpm run lint && pnpm run typecheck && vitest run && pnpm run build",
+    "knip": "knip",
+    "quality": "pnpm run knip && pnpm run lint && pnpm run typecheck && pnpm run test:unit-nowatch && pnpm run build",
     "prepare": "husky"
   },
   "dependencies": {
@@ -41,6 +43,7 @@
     "eslint": "^10.3.0",
     "husky": "^9.1.7",
     "jsdom": "^29.1.1",
+    "knip": "^6.12.0",
     "lint-staged": "^17.0.4",
     "prettier": "^3.8.3",
     "prettier-plugin-tailwindcss": "^0.8.0",
@@ -49,6 +52,7 @@
     "typescript": "^6.0.3",
     "vite": "^8.0.13",
     "vitest": "^4.1.6",
+    "vue-router-mock": "^2.0.2",
     "vue-tsc": "^3.2.9"
   }
 }

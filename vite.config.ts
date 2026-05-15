@@ -26,6 +26,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, '/src'),
+      '@tests': resolve(__dirname, '/tests'),
     },
   },
   css: {
@@ -40,7 +41,7 @@ export default defineConfig({
     // Clear the mocks call count before each test so that we don't have to call vi.clearAllMocks manually - https://vitest.dev/config/#clearmocks
     clearMocks: true,
     globalSetup: './tests/vitest.global-setup.ts',
-    setupFiles: ['./tests/vitest.globals.ts'],
+    setupFiles: ['./tests/vitest.globals.ts', './tests/vitest.router-mock-setup.ts'],
     environment: 'jsdom',
     reporters: ['default'],
     coverage: {

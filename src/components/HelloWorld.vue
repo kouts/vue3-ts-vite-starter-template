@@ -16,10 +16,22 @@
         Vite documentation</a
       >.
     </p>
+
+    <p class="mt-8">Counter: {{ counter }} (double: {{ doubleCount }})</p>
+    <button
+      type="button"
+      class="mt-2 rounded bg-emerald-500 px-3 py-2 cursor-pointer text-sm text-white hover:bg-emerald-600"
+      @click="counterStore.increment"
+    >
+      Increment
+    </button>
   </div>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useCounterStore } from '@/stores/counter'
+
 defineOptions({
   name: 'HelloWorld',
 })
@@ -30,6 +42,10 @@ defineProps({
     default: '',
   },
 })
+
+const counterStore = useCounterStore()
+const counter = computed(() => counterStore.counter)
+const doubleCount = computed(() => counterStore.doubleCount)
 </script>
 
 <style lang="scss" scoped>

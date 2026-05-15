@@ -32,17 +32,8 @@ jobs:
       - name: Install dependencies 📦
         run: pnpm install
 
-      - name: Run linter 👀
-        run: pnpm run lint-fix
-
-      - name: Typecheck 👀
-        run: pnpm run typecheck
-
-      - name: Run tests 🧪
-        run: pnpm run test:unit
-
-      - name: Build
-        run: pnpm run build
+      - name: Quality gate 👀
+        run: pnpm run quality
   release:
     runs-on: ${{ matrix.os }}
     needs: ci

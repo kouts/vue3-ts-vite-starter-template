@@ -1,6 +1,6 @@
 <template>
-  <nav class="fixed start-0 top-0 z-20 w-full border-b border-slate-200 bg-white">
-    <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between px-4 py-3 md:justify-normal md:py-4">
+  <nav class="fixed inset-s-0 top-0 z-20 w-full border-b border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between px-4 py-3 md:justify-normal md:py-4">
       <RouterLink to="/" class="flex items-center space-x-3 no-underline rtl:space-x-reverse">
         <span class="self-center whitespace-nowrap text-2xl font-semibold text-slate-600">ProjectName</span>
       </RouterLink>
