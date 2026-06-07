@@ -1,3 +1,10 @@
+## [3.1.2](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v3.1.1...v3.1.2) (2026-06-07)
+
+
+### Bug Fixes
+
+* updated npm packages and eslint config ([f98dcf1](https://github.com/kouts/vue3-ts-vite-starter-template/commit/f98dcf1c1908c82b702c11b155f9d3fc89b1817c))
+
 ## [3.1.1](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v3.1.0...v3.1.1) (2026-05-29)
 
 
