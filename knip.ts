@@ -7,5 +7,5 @@ export default {
     'prettier-plugin-tailwindcss',
     'tailwindcss',
   ],
-  ignoreBinaries: ['semantic-release', 'only-allow'],
+  ignoreBinaries: [],
 }
