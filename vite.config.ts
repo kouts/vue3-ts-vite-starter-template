@@ -25,8 +25,8 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': resolve(__dirname, '/src'),
-      '@tests': resolve(__dirname, '/tests'),
+      '@': resolve(import.meta.dirname, 'src'),
+      '@tests': resolve(import.meta.dirname, 'tests'),
     },
   },
   css: {
