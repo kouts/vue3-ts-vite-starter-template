@@ -5,4 +5,7 @@ allowBuilds:
   esbuild: true
   unrs-resolver: true
 minimumReleaseAgeStrict: true
-minimumReleaseAgeExclude: []
+minimumReleaseAgeExclude:
+  - '@kouts/eslint-config@3.1.5'
+  - '@vitest/eslint-plugin@1.6.25'
+  - globals@17.9.0

@@ -4,7 +4,7 @@
   "version": "0.0.0-semantic-release",
   "license": "MIT",
   "repository": "https://github.com/kouts/vue3-ts-vite-starter-template",
-  "packageManager": "pnpm@11.18.0",
+  "packageManager": "pnpm@11.19.0",
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -32,7 +32,7 @@
     "@commitlint/config-conventional": "^21.2.0",
     "@fullhuman/postcss-purgecss": "^8.0.0",
     "@fullhuman/vue-cli-plugin-purgecss": "^8.0.0",
-    "@kouts/eslint-config": "^3.1.4",
+    "@kouts/eslint-config": "^3.1.5",
     "@tailwindcss/vite": "^4.3.3",
     "@types/jsdom": "^28.0.3",
     "@types/node": "^26.1.2",
