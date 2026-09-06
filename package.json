@@ -4,7 +4,7 @@
   "version": "0.0.0-semantic-release",
   "license": "MIT",
   "repository": "https://github.com/kouts/vue3-ts-vite-starter-template",
-  "packageManager": "pnpm@11.19.0",
+  "packageManager": "pnpm@12.3.4",
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -23,36 +23,36 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "pinia": "^4.0.2",
-    "vue": "^3.5.40",
-    "vue-router": "^5.2.0"
+    "pinia": "^4.0.3",
+    "vue": "^3.5.42",
+    "vue-router": "^5.3.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^21.2.1",
-    "@commitlint/config-conventional": "^21.2.0",
+    "@commitlint/cli": "^21.2.2",
+    "@commitlint/config-conventional": "^21.2.2",
     "@fullhuman/postcss-purgecss": "^8.0.0",
     "@fullhuman/vue-cli-plugin-purgecss": "^8.0.0",
     "@kouts/eslint-config": "^3.1.5",
     "@tailwindcss/vite": "^4.3.3",
-    "@types/jsdom": "^28.0.3",
-    "@types/node": "^26.1.2",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^26.4.1",
     "@vitejs/plugin-vue": "^6.0.8",
-    "@vitest/coverage-v8": "^4.1.10",
-    "@vue/compiler-sfc": "^3.5.40",
-    "@vue/test-utils": "^2.4.11",
-    "eslint": "^10.8.0",
+    "@vitest/coverage-v8": "^5.0.0",
+    "@vue/compiler-sfc": "^3.5.42",
+    "@vue/test-utils": "^2.5.0",
+    "eslint": "^10.10.0",
     "husky": "^9.1.7",
     "jsdom": "^30.0.1",
-    "knip": "^6.31.0",
-    "lint-staged": "^17.3.0",
+    "knip": "^6.34.0",
+    "lint-staged": "^17.5.0",
     "prettier": "^3.9.6",
     "prettier-plugin-tailwindcss": "^0.8.1",
-    "sass": "^1.102.0",
+    "sass": "^1.104.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3",
-    "vite": "^8.2.0",
-    "vitest": "^4.1.10",
+    "vite": "^8.2.2",
+    "vitest": "^5.0.0",
     "vue-router-mock": "^2.0.2",
-    "vue-tsc": "^3.3.9"
+    "vue-tsc": "^3.3.11"
   }
 }
