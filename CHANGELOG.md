@@ -1,3 +1,10 @@
+## [3.1.8](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v3.1.7...v3.1.8) (2026-09-18)
+
+
+### Bug Fixes
+
+* updated npm packages, fixed knip config ([44b159e](https://github.com/kouts/vue3-ts-vite-starter-template/commit/44b159ee8c86f017bf7d38b3b04a9a983b9f8993))
+
 ## [3.1.7](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v3.1.6...v3.1.7) (2026-09-06)
 
 
