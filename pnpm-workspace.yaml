@@ -6,6 +6,8 @@ allowBuilds:
   unrs-resolver: true
 minimumReleaseAgeStrict: true
 minimumReleaseAgeExclude:
-  - '@kouts/eslint-config@3.1.5'
+  - '@kouts/eslint-config@3.1.6'
   - '@vitest/eslint-plugin@1.6.25'
   - globals@17.9.0
+  - knip@6.37.0
+  - prettier@3.9.8
