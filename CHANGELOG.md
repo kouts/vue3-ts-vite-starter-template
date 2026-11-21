@@ -1,3 +1,10 @@
+## [3.1.9](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v3.1.8...v3.1.9) (2026-11-21)
+
+
+### Bug Fixes
+
+* update Node 24, refresh dependencies, and add Vite Doctor to CI ([86f9c46](https://github.com/kouts/vue3-ts-vite-starter-template/commit/86f9c4666382c7fb15e5949e7bbd14813ab984c3))
+
 ## [3.1.8](https://github.com/kouts/vue3-ts-vite-starter-template/compare/v3.1.7...v3.1.8) (2026-09-18)
 
 
