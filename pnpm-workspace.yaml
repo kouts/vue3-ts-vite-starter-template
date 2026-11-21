@@ -9,5 +9,15 @@ minimumReleaseAgeExclude:
   - '@kouts/eslint-config@3.1.6'
   - '@vitest/eslint-plugin@1.6.25'
   - globals@17.9.0
-  - knip@6.37.0
+  - knip@6.37.0 || 6.47.0
   - prettier@3.9.8
+  - '@vue/compiler-core@3.5.46'
+  - '@vue/compiler-dom@3.5.46'
+  - '@vue/compiler-sfc@3.5.46'
+  - '@vue/compiler-ssr@3.5.46'
+  - '@vue/reactivity@3.5.46'
+  - '@vue/runtime-core@3.5.46'
+  - '@vue/runtime-dom@3.5.46'
+  - '@vue/server-renderer@3.5.46'
+  - '@vue/shared@3.5.46'
+  - vue@3.5.46
